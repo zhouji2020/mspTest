@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/dkxinterfaceTest.iml" filepath="$PROJECT_DIR$/.idea/dkxinterfaceTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/mspTest.iml" filepath="$PROJECT_DIR$/.idea/mspTest.iml" />
     </modules>
   </component>
 </project>
