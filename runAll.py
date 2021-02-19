@@ -9,21 +9,22 @@ import pythoncom
 import common.Log
 
 send_mail = send_email()
-path = getpathInfo.get_Path()
+path = getpathInfo.get_path()
 report_path = os.path.join(path, 'result')
 on_off = readConfig.ReadConfig().get_email('on_off')
 log = common.Log.logger
 
-class AllTest:#定义一个类AllTest
-    def __init__(self):#初始化一些参数和数据
+
+class AllTest:  # 定义一个类AllTest
+    def __init__(self):  # 初始化一些参数和数据
         global resultPath
-        resultPath = os.path.join(report_path, "report.html")#result/report.html
-        self.caseListFile = os.path.join(path, "caselist.txt")#配置执行哪些测试文件的配置文件路径
-        self.caseFile = os.path.join(path, "testCase")#真正的测试断言文件路径
+        resultPath = os.path.join(report_path, "report.html")  # result/report.html
+        self.caseListFile = os.path.join(path, "caselist.txt")  # 配置执行哪些测试文件的配置文件路径
+        self.caseFile = os.path.join(path, "testCase")  # 真正的测试断言文件路径
         self.caseList = []
-        log.info('resultPath'+resultPath)#将resultPath的值输入到日志，方便定位查看问题
-        log.info('caseListFile'+self.caseListFile)#同理
-        log.info('caseList'+str(self.caseList))#同理
+        log.info('resultPath'+resultPath)  # 将resultPath的值输入到日志，方便定位查看问题
+        log.info('caseListFile'+self.caseListFile)  # 同理
+        log.info('caseList'+str(self.caseList))  # 同理
 
     def set_case_list(self):
         """
@@ -59,7 +60,7 @@ class AllTest:#定义一个类AllTest
         else:
             print('else:')
             return None
-        return test_suite#返回测试集
+        return test_suite  #返回测试集
 
     def run(self):
         """
@@ -67,26 +68,26 @@ class AllTest:#定义一个类AllTest
         :return:
         """
         try:
-            suit = self.set_case_suite()#调用set_case_suite获取test_suite
+            suit = self.set_case_suite()  # 调用set_case_suite获取test_suite
             print('try')
             print(str(suit))
-            if suit is not None:#判断test_suite是否为空
+            if suit is not None:  # 判断test_suite是否为空
                 print('if-suit')
-                fp = open(resultPath, 'wb')#打开result/20181108/report.html测试报告文件，如果不存在就创建
-                #调用HTMLTestRunner
+                fp = open(resultPath, 'wb')  # 打开result/20181108/report.html测试报告文件，如果不存在就创建
+                # 调用HTMLTestRunner
                 runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title='Test Report', description='Test Description')
                 runner.run(suit)
             else:
                 print("Have no case to test.")
         except Exception as ex:
             print(str(ex))
-            #log.info(str(ex))
+            # log.info(str(ex))
 
         finally:
             print("*********TEST END*********")
-            #log.info("*********TEST END*********")
+            # log.info("*********TEST END*********")
             fp.close()
-        #判断邮件发送的开关
+        # 判断邮件发送的开关
         if on_off == 'on':
             send_mail.outlook()
         else:
@@ -95,6 +96,7 @@ class AllTest:#定义一个类AllTest
 # scheduler = BlockingScheduler()
 # scheduler.add_job(AllTest().run, 'cron', day_of_week='1-5', hour=14, minute=59)
 # scheduler.start()
+
 
 if __name__ == '__main__':
     AllTest().run()
