@@ -13,7 +13,7 @@ class RunMain:
         return res
 
     def send_get(self, url, data):
-        result = requests.get(url=url, data=data)
+        result = requests.get(url=url, data=data).json()
         res = json.dumps(result, ensure_ascii=False, sort_keys=True, indent=2)
         return res
 
@@ -32,5 +32,7 @@ class RunMain:
 
 
 if __name__ == '__main__':  # 通过写死参数，来验证我们写的请求是否正确
-    result = RunMain().run_main('post', 'http://127.0.0.1:8888/login', 'name=xiaoming&pwd=')
-    print(result)
+    result1 = RunMain().run_main('post', 'http://127.0.0.1:8888/login', {'name': 'xiaoming', 'pwd': '111'})
+    result2 = RunMain().run_main('get', 'http://127.0.0.1:8888/login', 'name=xiaoming&pwd=111')
+    print(result1)
+    print(result2)

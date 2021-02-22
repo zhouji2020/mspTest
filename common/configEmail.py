@@ -9,10 +9,10 @@ import base64
 class SendMail(object):
     def __init__(self, username, passwd, recv, title, content, file=None, ssl=False,
                  email_host='smtp.kedacom.com', port=25, ssl_port=995):
-        self.username = ReadConfig().get_email('username')  # 用户名
-        self.passwd = ReadConfig().get_email('passwd')  # 密码
-        self.recv = ReadConfig().get_email('recv')  # 收件人，多个要传list ['a@qq.com','b@qq.com]
-        self.title = ReadConfig().get_email('title')  # 邮件标题
+        self.username = username  # 用户名
+        self.passwd = passwd  # 密码
+        self.recv = recv  # 收件人，多个要传list ['a@qq.com','b@qq.com]
+        self.title = title  # 邮件标题
         self.content = content  # 邮件正文
         self.file = file  # 附件路径，如果不在当前目录下，要写绝对路径
         self.email_host = email_host  # smtp服务器地址

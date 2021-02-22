@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e92bbab-2a44-44f6-ad11-d8ece45bf83a" name="Default Changelist" comment="日志方法更改">
+    <list default="true" id="8e92bbab-2a44-44f6-ad11-d8ece45bf83a" name="Default Changelist" comment="优化运行文件">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/configEmail.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/configEmail.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/configHttp.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/configHttp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/readConfig.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/logs" beforeDir="false" afterPath="$PROJECT_DIR$/result/logs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/result/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runAll.py" beforeDir="false" afterPath="$PROJECT_DIR$/runAll.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testCase/test01case.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/test01case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,28 +153,7 @@
       <recent name="C:\Users\songlihui\PycharmProjects\dkxinterfaceTest" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.runAll">
-    <configuration name="HTMLTestRunner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="mspTest" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/HTMLTestRunner.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.geturlParams">
     <configuration name="configHttp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="mspTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -191,6 +167,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/configHttp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="geturlParams" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="mspTest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/geturlParams.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -264,17 +261,17 @@
     </configuration>
     <list>
       <item itemvalue="Python.readConfig" />
-      <item itemvalue="Python.HTMLTestRunner" />
       <item itemvalue="Python.configHttp" />
       <item itemvalue="Python.test_api" />
       <item itemvalue="Python.runAll" />
+      <item itemvalue="Python.geturlParams" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.geturlParams" />
+        <item itemvalue="Python.configHttp" />
         <item itemvalue="Python.runAll" />
         <item itemvalue="Python.test_api" />
-        <item itemvalue="Python.HTMLTestRunner" />
-        <item itemvalue="Python.configHttp" />
         <item itemvalue="Python.readConfig" />
       </list>
     </recent_temporary>
@@ -319,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613979219233</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="优化运行文件">
+      <created>1613982624238</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1613982624238</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -421,10 +425,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Default Changelist" />
     <MESSAGE value="日志方法更改" />
-    <option name="LAST_COMMIT_MESSAGE" value="日志方法更改" />
+    <MESSAGE value="优化运行文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化运行文件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/common/configHttp.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
