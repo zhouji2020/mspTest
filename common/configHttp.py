@@ -17,7 +17,7 @@ class RunMain:
         res = json.dumps(result, ensure_ascii=False, sort_keys=True, indent=2)
         return res
 
-    def run_main(self, method, url=None, data=None):#定义一个run_main函数，通过传过来的method来进行不同的get或post请求
+    def run_main(self, method, url=None, data=None):  # 定义一个run_main函数，通过传过来的method来进行不同的get或post请求
         result = None
         if method == 'post':
             result = self.send_post(url, data)

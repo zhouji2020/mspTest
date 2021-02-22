@@ -3,12 +3,12 @@ import common.HTMLTestRunner as HTMLTestRunner
 import getpathInfo
 import unittest
 import readConfig
-from common.configEmail import send_email
+from common.configEmail import SendMail
 from apscheduler.schedulers.blocking import BlockingScheduler
 import pythoncom
 import common.Log
 
-send_mail = send_email()
+'''send_mail = SendMail()'''
 path = getpathInfo.get_path()
 report_path = os.path.join(path, 'result')
 on_off = readConfig.ReadConfig().get_email('on_off')
@@ -34,8 +34,8 @@ class AllTest:  # 定义一个类AllTest
         fb = open(self.caseListFile)
         for value in fb.readlines():
             data = str(value)
-            if data != '' and not data.startswith("#"):# 如果data非空且不以#开头
-                self.caseList.append(data.replace("\n", ""))#读取每行数据会将换行转换为\n，去掉每行数据中的\n
+            if data != '' and not data.startswith("#"):  # 如果data非空且不以#开头
+                self.caseList.append(data.replace("\n", ""))  # 读取每行数据会将换行转换为\n，去掉每行数据中的\n
         fb.close()
 
     def set_case_suite(self):
@@ -43,24 +43,24 @@ class AllTest:  # 定义一个类AllTest
 
         :return:
         """
-        self.set_case_list()#通过set_case_list()拿到caselist元素组
+        self.set_case_list()  # 通过set_case_list()拿到caselist元素组
         test_suite = unittest.TestSuite()
         suite_module = []
-        for case in self.caseList:#从caselist元素组中循环取出case
-            case_name = case.split("/")[-1]#通过split函数来将aaa/bbb分割字符串，-1取后面，0取前面
-            print(case_name+".py")#打印出取出来的名称
-            #批量加载用例，第一个参数为用例存放路径，第一个参数为路径文件名
+        for case in self.caseList:  # 从caselist元素组中循环取出case
+            case_name = case.split("/")[-1]  # 通过split函数来将aaa/bbb分割字符串，-1取后面，0取前面
+            print(case_name+".py")  # 打印出取出来的名称
             discover = unittest.defaultTestLoader.discover(self.caseFile, pattern=case_name + '.py', top_level_dir=None)
-            suite_module.append(discover)#将discover存入suite_module元素组
+            # 批量加载用例，第一个参数为用例存放路径，第一个参数为路径文件名
+            suite_module.append(discover)  # 将discover存入suite_module元素组
             print('suite_module:'+str(suite_module))
-        if len(suite_module) > 0:#判断suite_module元素组是否存在元素
-            for suite in suite_module:#如果存在，循环取出元素组内容，命名为suite
-                for test_name in suite:#从discover中取出test_name，使用addTest添加到测试集
+        if len(suite_module) > 0:  # 判断suite_module元素组是否存在元素
+            for suite in suite_module:  # 如果存在，循环取出元素组内容，命名为suite
+                for test_name in suite:  # 从discover中取出test_name，使用addTest添加到测试集
                     test_suite.addTest(test_name)
         else:
             print('else:')
             return None
-        return test_suite  #返回测试集
+        return test_suite  # 返回测试集
 
     def run(self):
         """
@@ -89,7 +89,16 @@ class AllTest:  # 定义一个类AllTest
             fp.close()
         # 判断邮件发送的开关
         if on_off == 'on':
-            send_mail.outlook()
+            mail = SendMail(
+                username='zhouji@kedacom.com',
+                passwd='7TmP9XC9',
+                recv=['fengpeng@kedacom.com'],
+                title='拼控服务自动化测试报告',
+                content='各位好，测试已完成，请查阅测试报告内容',
+                file=r'C:\Users\admin\PycharmProjects\interfaceTest\result\logs',
+                ssl=False,
+            )
+            mail.send_mail()
         else:
             print("邮件发送开关配置关闭，请打开开关后可正常自动发送测试报告")
 # pythoncom.CoInitialize()
