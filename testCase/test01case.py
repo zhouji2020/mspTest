@@ -10,31 +10,29 @@ import readExcel
 
 url = geturlParams.geturlParams().get_url()  # 调用我们的geturlParams获取我们拼接的URL
 login_xls = readExcel.readExcel().get_xls('userCase.xlsx', 'login')
-data1 = 123
 
 
 @paramunittest.parametrized(*login_xls)
 class testUserLogin(unittest.TestCase):
-    def setParameters(self, case_name, path, query, method):
+    def setParameters(self, case_name, path, body, method):
         """
         set params
         :param case_name:
         :param path
-        :param query
+        :param body
         :param method
         :return:
         """
         self.case_name = str(case_name)
         self.path = str(path)
-        self.query = str(query)
+        self.body = str(body)
         self.method = str(method)
 
-    '''def description(self):
+    def description(self):
         """
         test report description
         :return:
         """
-'''
 
     def setUp(self):
         """
@@ -55,8 +53,8 @@ class testUserLogin(unittest.TestCase):
         :return:
         """
 
-        info = RunMain().run_main(self.method, url, data1)  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
-        ss = json.loads(info)  # 将响应转换为字典格式
+        info = RunMain().run_main(self.method, url, self.body)  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
+        ss = json.loads(info)  # 将响应转换为json格式
         if self.case_name == 'login':  # 如果case_name是login，说明合法，返回的code应该为200
             self.assertEqual(ss['code'], 200)
         if self.case_name == 'login_error':  # 同上
