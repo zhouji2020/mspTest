@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e92bbab-2a44-44f6-ad11-d8ece45bf83a" name="Default Changelist" comment="测试断言还未修改完毕">
-      <change afterPath="$PROJECT_DIR$/testCase/testlogin.py" afterDir="false" />
+    <list default="true" id="8e92bbab-2a44-44f6-ad11-d8ece45bf83a" name="Default Changelist" comment="接口修改">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/logs" beforeDir="false" afterPath="$PROJECT_DIR$/result/logs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCase/test01case.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/test01case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCase/testlogin.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/testlogin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testFile/case/userCase.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/testFile/case/userCase.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -156,7 +155,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Python 测试.testlogin.py 中的 Unittest">
-    <configuration name="test01case.py 中的 Unittest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="testlogin.TestAuthentication 的 Unittest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="mspTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -166,11 +165,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/testCase/test01case.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;testlogin.TestAuthentication&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="test01case.testUserLogin 的 Unittest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="testlogin.TestAuthentication.test_login 的 Unittest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="mspTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -180,7 +179,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test01case.testUserLogin&quot;" />
+      <option name="_new_target" value="&quot;testlogin.TestAuthentication.test_login&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -227,19 +226,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python 测试.test01case.py 中的 Unittest" />
-      <item itemvalue="Python 测试.test01case.testUserLogin 的 Unittest" />
+      <item itemvalue="Python 测试.testlogin.py 中的 Unittest" />
       <item itemvalue="Python 测试.testlogin.TestCase 的 Unittest" />
       <item itemvalue="Python 测试.testlogin.TestCase.testlogin 的 Unittest" />
-      <item itemvalue="Python 测试.testlogin.py 中的 Unittest" />
+      <item itemvalue="Python 测试.testlogin.TestAuthentication 的 Unittest" />
+      <item itemvalue="Python 测试.testlogin.TestAuthentication.test_login 的 Unittest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python 测试.testlogin.py 中的 Unittest" />
+        <item itemvalue="Python 测试.testlogin.TestAuthentication.test_login 的 Unittest" />
+        <item itemvalue="Python 测试.testlogin.TestAuthentication 的 Unittest" />
         <item itemvalue="Python 测试.testlogin.TestCase.testlogin 的 Unittest" />
         <item itemvalue="Python 测试.testlogin.TestCase 的 Unittest" />
-        <item itemvalue="Python 测试.test01case.testUserLogin 的 Unittest" />
-        <item itemvalue="Python 测试.test01case.py 中的 Unittest" />
       </list>
     </recent_temporary>
   </component>
@@ -297,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613993863900</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="接口修改">
+      <created>1614069142139</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1614069142139</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -387,11 +393,41 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
@@ -401,7 +437,8 @@
     <MESSAGE value="日志方法更改" />
     <MESSAGE value="优化运行文件" />
     <MESSAGE value="测试断言还未修改完毕" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试断言还未修改完毕" />
+    <MESSAGE value="接口修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="接口修改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

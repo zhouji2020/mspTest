@@ -106,3 +106,109 @@
   "error": 0,
   "token": "585b4bd6829e6794c679589d117a187d"
 }
+2021-02-23 19:07:26,280 - logs… - INFO - {
+  "error": -1,
+  "errstr": "TOKEN INVALID",
+  "errstrCh": "非法TOKEN"
+}
+2021-02-23 19:07:29,311 - logs… - INFO - {
+  "error": -1,
+  "errstr": "TOKEN INVALID",
+  "errstrCh": "非法TOKEN"
+}
+2021-02-23 19:07:32,329 - logs… - INFO - {
+  "error": -1,
+  "errstr": "TOKEN INVALID",
+  "errstrCh": "非法TOKEN"
+}
+2021-02-23 20:08:15,004 - logs… - INFO - {
+  "error": 0,
+  "token": "585b4bd6829e6794c679589d117a187d"
+}
+2021-02-23 20:08:18,024 - logs… - INFO - {
+  "error": 0,
+  "errstr": "SUCCESS",
+  "errstrCh": "成功"
+}
+2021-02-23 20:08:21,046 - logs… - INFO - {
+  "error": 0,
+  "version": "PCSMV1R1B2 Daily 1.1.2.4:Jan 13 2021 17:44:47 \n"
+}
+2021-02-23 20:13:08,740 - logs… - INFO - {
+  "error": 0,
+  "token": "adbe03ae9f80684fcf636e7c66a30b14"
+}
+2021-02-23 20:13:11,764 - logs… - INFO - {
+  "error": 0,
+  "errstr": "SUCCESS",
+  "errstrCh": "成功"
+}
+2021-02-23 20:13:14,782 - logs… - INFO - {
+  "error": 0,
+  "version": "PCSMV1R1B2 Daily 1.1.2.4:Jan 13 2021 17:44:47 \n"
+}
+2021-02-23 20:14:18,702 - logs… - INFO - {
+  "error": 0,
+  "token": "3d40baad78a165ca94940f9b8c5ea716"
+}
+2021-02-23 20:14:21,722 - logs… - INFO - {
+  "error": 0,
+  "errstr": "SUCCESS",
+  "errstrCh": "成功"
+}
+2021-02-23 20:14:24,739 - logs… - INFO - {
+  "error": 0,
+  "version": "PCSMV1R1B2 Daily 1.1.2.4:Jan 13 2021 17:44:47 \n"
+}
+2021-02-23 20:16:51,142 - logs… - INFO - {
+  "error": 0,
+  "token": "1b4550a418d8bdd5531e047f9675fcf8"
+}
+2021-02-23 20:16:51,160 - logs… - INFO - {
+  "error": 0,
+  "errstr": "SUCCESS",
+  "errstrCh": "成功"
+}
+2021-02-23 20:16:51,177 - logs… - INFO - {
+  "error": 0,
+  "version": "PCSMV1R1B2 Daily 1.1.2.4:Jan 13 2021 17:44:47 \n"
+}
+2021-02-23 20:25:20,799 - logs… - INFO - {
+  "error": 0,
+  "token": "3d40baad78a165ca94940f9b8c5ea716"
+}
+2021-02-23 20:25:20,818 - logs… - INFO - {
+  "error": 0,
+  "errstr": "SUCCESS",
+  "errstrCh": "成功"
+}
+2021-02-23 20:25:20,834 - logs… - INFO - {
+  "error": 0,
+  "version": "PCSMV1R1B2 Daily 1.1.2.4:Jan 13 2021 17:44:47 \n"
+}
+2021-02-23 20:25:42,279 - logs… - INFO - {
+  "error": 0,
+  "token": "82731051121a7013d80e60bd658cfdf5"
+}
+2021-02-23 20:25:45,300 - logs… - INFO - {
+  "error": 0,
+  "errstr": "SUCCESS",
+  "errstrCh": "成功"
+}
+2021-02-23 20:25:48,318 - logs… - INFO - {
+  "error": 0,
+  "version": "PCSMV1R1B2 Daily 1.1.2.4:Jan 13 2021 17:44:47 \n"
+}
+2021-02-23 20:26:57,656 - logs… - INFO - {
+  "error": 0,
+  "token": "1c130dd839bf1b68ac121d35c781a92e"
+}
+2021-02-23 20:27:00,675 - logs… - INFO - {
+  "error": 0,
+  "errstr": "SUCCESS",
+  "errstrCh": "成功"
+}
+2021-02-23 20:27:03,702 - logs… - INFO - {
+  "error": 0,
+  "version": "PCSMV1R1B2 Daily 1.1.2.4:Jan 13 2021 17:44:47 \n"
+}
