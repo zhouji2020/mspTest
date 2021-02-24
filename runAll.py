@@ -10,19 +10,19 @@ import common.Log
 
 '''send_mail = SendMail()'''
 path = getpathInfo.get_path()
-report_path = os.path.join(path, 'result')
+result_path = os.path.join(path, 'result')
 on_off = readConfig.ReadConfig().get_email('on_off')
 log = common.Log.logger
 
 
 class AllTest:  # 定义一个类AllTest
     def __init__(self):  # 初始化一些参数和数据
-        global resultPath
-        resultPath = os.path.join(report_path, "report.html")  # result/report.html
+        global reportPath
+        reportPath = os.path.join(result_path, "report.html")  # result/report.html
         self.caseListFile = os.path.join(path, "caselist.txt")  # 配置执行哪些测试文件的配置文件路径
         self.caseFile = os.path.join(path, "testCase")  # 真正的测试断言文件路径
         self.caseList = []
-        log.info('resultPath'+resultPath)  # 将resultPath的值输入到日志，方便定位查看问题
+        log.info('resultPath' + reportPath)  # 将resultPath的值输入到日志，方便定位查看问题
         log.info('caseListFile'+self.caseListFile)  # 同理
         log.info('caseList'+str(self.caseList))  # 同理
 
@@ -73,7 +73,7 @@ class AllTest:  # 定义一个类AllTest
             print(str(suit))
             if suit is not None:  # 判断test_suite是否为空
                 print('if-suit')
-                fp = open(resultPath, 'wb')  # 打开result/20181108/report.html测试报告文件，如果不存在就创建
+                fp = open(reportPath, 'wb')  # 打开result/20181108/report.html测试报告文件，如果不存在就创建
                 # 调用HTMLTestRunner
                 runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title='Test Report', description='Test Description')
                 runner.run(suit)
@@ -92,9 +92,9 @@ class AllTest:  # 定义一个类AllTest
             mail = SendMail(
                 username='zhouji@kedacom.com',
                 passwd='7TmP9XC9',
-                recv=['fengpeng@kedacom.com'],
-                title='拼控服务自动化测试报告',
-                content='各位好，测试已完成，请查阅测试报告内容',
+                recv=[readConfig.ReadConfig().get_email('recv')],
+                title=readConfig.ReadConfig().get_email('title'),
+                content=readConfig.ReadConfig().get_email('content'),
                 file=r'C:\Users\admin\PycharmProjects\interfaceTest\result\logs',
                 ssl=False,
             )

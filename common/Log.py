@@ -3,17 +3,17 @@ import logging
 from logging.handlers import TimedRotatingFileHandler
 import getpathInfo
 
-path = getpathInfo.get_path()
+path = getpathInfo.get_path()  # 根目录绝对路径
 log_path = os.path.join(path, 'result')  # 存放log文件的路径
 
 
 class Logger(object):
-    def __init__(self, logger_name='logs…'):
-        self.logger = logging.getLogger(logger_name)
-        logging.root.setLevel(logging.NOTSET)
+    def __init__(self, logger_name='logs…'):  # 初始化参数
+        self.logger = logging.getLogger(logger_name)  # 将名称为logger_name的Logger实例定义为一个对象
+        logging.root.setLevel(logging.NOTSET)  # 不设置默认logging级别
         self.log_file_name = 'logs'  # 日志文件的名称
         self.backup_count = 5  # 最多存放日志的数量
-        self.console_output_level = 'WARNING'
+        self.console_output_level = 'WARNING'  # 控制台输出级别
         self.file_output_level = 'DEBUG'  # 日志输出级别
         self.formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')  # 日志输出格式
 
@@ -25,10 +25,10 @@ class Logger(object):
             console_handler.setLevel(self.console_output_level)
             self.logger.addHandler(console_handler)
 
-            # 每天重新创建一个日志文件，最多保留backup_count份
             file_handler = TimedRotatingFileHandler(filename=os.path.join(log_path, self.log_file_name), when='D',
                                                     interval=1, backupCount=self.backup_count, delay=True,
                                                     encoding='utf-8')
+            # 每天重新创建一个日志文件，最多保留backup_count份
             file_handler.setFormatter(self.formatter)
             file_handler.setLevel(self.file_output_level)
             self.logger.addHandler(file_handler)
