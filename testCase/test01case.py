@@ -13,7 +13,7 @@ login_xls = readExcel.readExcel().get_xls('userCase.xlsx', 'login')
 
 
 @paramunittest.parametrized(*login_xls)
-class testUserLogin(unittest.TestCase):
+class TestUserLogin(unittest.TestCase):
     def setParameters(self, case_name, path, body, method):
         """
         set params

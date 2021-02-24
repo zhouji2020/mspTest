@@ -212,3 +212,298 @@
   "error": 0,
   "version": "PCSMV1R1B2 Daily 1.1.2.4:Jan 13 2021 17:44:47 \n"
 }
+2021-02-24 09:20:53,040 - logs… - INFO - {
+  "code": 200,
+  "message": "登录成功"
+}
+2021-02-24 09:20:53,045 - logs… - INFO - {
+  "code": 10001,
+  "message": "参数不能为空！"
+}
+2021-02-24 09:24:09,945 - logs… - INFO - {'code': 200, 'message': '登录成功'}
+2021-02-24 09:24:09,949 - logs… - INFO - {
+  "code": 10001,
+  "message": "参数不能为空！"
+}
+2021-02-24 09:27:54,052 - logs… - INFO - {'code': 200, 'message': '登录成功'}
+2021-02-24 09:27:54,056 - logs… - INFO - {
+  "code": 10001,
+  "message": "参数不能为空！"
+}
+2021-02-24 09:28:07,764 - logs… - INFO - {
+  "code": 200,
+  "message": "登录成功"
+}
+2021-02-24 09:28:07,768 - logs… - INFO - {
+  "code": 10001,
+  "message": "参数不能为空！"
+}
+2021-02-24 09:28:59,612 - logs… - INFO - {
+  "code": 200,
+  "message": "登录成功"
+}
+2021-02-24 09:28:59,617 - logs… - INFO - {
+  "code": 10001,
+  "message": "参数不能为空！"
+}
+2021-02-24 09:29:35,077 - logs… - INFO - {
+  "code": 200,
+  "message": "登录成功"
+}
+2021-02-24 09:29:35,081 - logs… - INFO - {
+  "code": 10001,
+  "message": "参数不能为空！"
+}
+2021-02-24 09:37:10,794 - logs… - INFO - {'code': 200, 'message': '登录成功'}
+2021-02-24 09:37:10,798 - logs… - INFO - {
+  "code": 10001,
+  "message": "参数不能为空！"
+}
+2021-02-24 09:38:36,185 - logs… - INFO - <Response [200]>
+2021-02-24 09:38:36,190 - logs… - INFO - {
+  "code": 10001,
+  "message": "参数不能为空！"
+}
+2021-02-24 09:40:22,578 - logs… - INFO - <Response [200]>
+2021-02-24 09:40:22,583 - logs… - INFO - {
+  "code": 10001,
+  "message": "参数不能为空！"
+}
+2021-02-24 09:52:49,326 - logs… - INFO - <Response [200]>
+2021-02-24 09:53:24,801 - logs… - INFO - <Response [200]>
+2021-02-24 09:53:24,806 - logs… - INFO - {
+  "code": 10001,
+  "message": "参数不能为空！"
+}
+2021-02-24 09:53:53,437 - logs… - INFO - <Response [200]>
+2021-02-24 09:53:53,440 - logs… - INFO - {
+  "code": 10001,
+  "message": "参数不能为空！"
+}
+2021-02-24 09:56:22,804 - logs… - INFO - <Response [200]>
+2021-02-24 09:56:22,809 - logs… - INFO - {
+  "code": 10001,
+  "message": "参数不能为空！"
+}
+2021-02-24 09:56:49,779 - logs… - INFO - <Response [200]>
+2021-02-24 09:56:49,784 - logs… - INFO - {
+  "code": 10001,
+  "message": "参数不能为空！"
+}
+2021-02-24 09:57:39,779 - logs… - INFO - <Response [200]>
+2021-02-24 09:57:39,782 - logs… - INFO - {
+  "code": 10001,
+  "message": "参数不能为空！"
+}
+2021-02-24 09:58:14,252 - logs… - INFO - <Response [200]>
+2021-02-24 09:58:14,256 - logs… - INFO - {
+  "code": 10001,
+  "message": "参数不能为空！"
+}
+2021-02-24 09:58:27,962 - logs… - INFO - <Response [200]>
+2021-02-24 09:58:27,968 - logs… - INFO - {
+  "code": 10001,
+  "message": "参数不能为空！"
+}
+2021-02-24 09:59:58,775 - logs… - INFO - 200
+2021-02-24 09:59:58,775 - logs… - INFO - 0.004384s
+2021-02-24 09:59:58,780 - logs… - INFO - {
+  "code": 10001,
+  "message": "参数不能为空！"
+}
+2021-02-24 10:02:35,353 - logs… - INFO - {
+  "error": 0,
+  "token": "82731051121a7013d80e60bd658cfdf5"
+}
+2021-02-24 10:02:38,372 - logs… - INFO - {
+  "error": 0,
+  "errstr": "SUCCESS",
+  "errstrCh": "成功"
+}
+2021-02-24 10:02:41,390 - logs… - INFO - {
+  "error": 0,
+  "version": "PCSMV1R1B2 Daily 1.1.2.4:Jan 13 2021 17:44:47 \n"
+}
+2021-02-24 10:10:02,756 - logs… - INFO - {
+  "error": 0,
+  "token": "4f255e6768eb7209b5bccd12764a490f"
+}
+2021-02-24 10:10:02,774 - logs… - INFO - 200
+2021-02-24 10:10:02,774 - logs… - INFO - 0.017138s
+2021-02-24 10:10:05,794 - logs… - INFO - {
+  "error": 0,
+  "errstr": "SUCCESS",
+  "errstrCh": "成功"
+}
+2021-02-24 10:10:05,813 - logs… - INFO - 200
+2021-02-24 10:10:05,814 - logs… - INFO - 0.016694s
+2021-02-24 10:10:08,841 - logs… - INFO - {
+  "error": 0,
+  "version": "PCSMV1R1B2 Daily 1.1.2.4:Jan 13 2021 17:44:47 \n"
+}
+2021-02-24 10:10:08,858 - logs… - INFO - 200
+2021-02-24 10:10:08,858 - logs… - INFO - 0.015862s
+2021-02-24 10:13:28,682 - logs… - INFO - {
+  "error": 0,
+  "token": "9a0d6945c81a417c19b19435e3ed0dcd"
+}
+2021-02-24 10:13:28,700 - logs… - INFO - 200
+2021-02-24 10:13:28,700 - logs… - INFO - 0.01587s
+2021-02-24 10:13:31,725 - logs… - INFO - {
+  "error": 0,
+  "errstr": "SUCCESS",
+  "errstrCh": "成功"
+}
+2021-02-24 10:13:31,746 - logs… - INFO - 200
+2021-02-24 10:13:31,747 - logs… - INFO - 0.017976s
+2021-02-24 10:13:34,767 - logs… - INFO - {
+  "error": 0,
+  "version": "PCSMV1R1B2 Daily 1.1.2.4:Jan 13 2021 17:44:47 \n"
+}
+2021-02-24 10:13:34,785 - logs… - INFO - 200
+2021-02-24 10:13:34,785 - logs… - INFO - 0.016031s
+2021-02-24 10:35:28,312 - logs… - INFO - {
+  "error": 0,
+  "token": "606785e4e62397006ac0d1adf43e5285"
+}
+2021-02-24 10:35:28,335 - logs… - INFO - 200
+2021-02-24 10:35:28,335 - logs… - INFO - 0.021281s
+2021-02-24 10:35:31,362 - logs… - INFO - {
+  "error": 0,
+  "errstr": "SUCCESS",
+  "errstrCh": "成功"
+}
+2021-02-24 10:35:31,385 - logs… - INFO - 200
+2021-02-24 10:35:31,385 - logs… - INFO - 0.021052s
+2021-02-24 10:35:34,413 - logs… - INFO - {
+  "error": 0,
+  "version": "PCSMV1R1B2 Daily 1.1.2.4:Jan 13 2021 17:44:47 \n"
+}
+2021-02-24 10:35:34,440 - logs… - INFO - 200
+2021-02-24 10:35:34,440 - logs… - INFO - 0.025952s
+2021-02-24 10:35:55,004 - logs… - INFO - {
+  "error": 0,
+  "token": "620506434cd1a5f876572a322b33a2eb"
+}
+2021-02-24 10:35:55,022 - logs… - INFO - 200
+2021-02-24 10:35:55,022 - logs… - INFO - 0.015956s
+2021-02-24 10:35:58,044 - logs… - INFO - {
+  "error": 0,
+  "errstr": "SUCCESS",
+  "errstrCh": "成功"
+}
+2021-02-24 10:35:58,066 - logs… - INFO - 200
+2021-02-24 10:35:58,067 - logs… - INFO - 0.019183s
+2021-02-24 10:36:01,085 - logs… - INFO - {
+  "error": 0,
+  "version": "PCSMV1R1B2 Daily 1.1.2.4:Jan 13 2021 17:44:47 \n"
+}
+2021-02-24 10:36:01,171 - logs… - INFO - 200
+2021-02-24 10:36:01,171 - logs… - INFO - 0.085413s
+2021-02-24 10:46:38,103 - logs… - INFO - {
+  "error": 0,
+  "token": "71548d6165358591026bb84a1f3d7072"
+}
+2021-02-24 10:46:38,121 - logs… - INFO - 200
+2021-02-24 10:46:38,121 - logs… - INFO - 0.015813s
+2021-02-24 10:46:41,143 - logs… - INFO - {
+  "error": 0,
+  "errstr": "SUCCESS",
+  "errstrCh": "成功"
+}
+2021-02-24 10:46:41,162 - logs… - INFO - 200
+2021-02-24 10:46:41,162 - logs… - INFO - 0.016958s
+2021-02-24 10:46:44,180 - logs… - INFO - {
+  "error": 0,
+  "version": "PCSMV1R1B2 Daily 1.1.2.4:Jan 13 2021 17:44:47 \n"
+}
+2021-02-24 10:46:44,197 - logs… - INFO - 200
+2021-02-24 10:46:44,197 - logs… - INFO - 0.015819s
+2021-02-24 10:47:31,267 - logs… - INFO - {
+  "error": 0,
+  "token": "1c130dd839bf1b68ac121d35c781a92e"
+}
+2021-02-24 10:47:31,285 - logs… - INFO - 200
+2021-02-24 10:47:31,285 - logs… - INFO - 0.016108s
+2021-02-24 10:47:34,308 - logs… - INFO - {
+  "error": 0,
+  "errstr": "SUCCESS",
+  "errstrCh": "成功"
+}
+2021-02-24 10:47:34,325 - logs… - INFO - 200
+2021-02-24 10:47:34,325 - logs… - INFO - 0.015811s
+2021-02-24 10:47:37,343 - logs… - INFO - {
+  "error": 0,
+  "version": "PCSMV1R1B2 Daily 1.1.2.4:Jan 13 2021 17:44:47 \n"
+}
+2021-02-24 10:47:37,360 - logs… - INFO - 200
+2021-02-24 10:47:37,360 - logs… - INFO - 0.015842s
+2021-02-24 10:48:30,647 - logs… - INFO - {
+  "error": 0,
+  "token": "55d56f56632544c8f87585f56af53cff"
+}
+2021-02-24 10:48:30,666 - logs… - INFO - 200
+2021-02-24 10:48:30,666 - logs… - INFO - 0.017577s
+2021-02-24 10:48:33,694 - logs… - INFO - {
+  "error": 0,
+  "errstr": "SUCCESS",
+  "errstrCh": "成功"
+}
+2021-02-24 10:48:33,723 - logs… - INFO - 200
+2021-02-24 10:48:33,723 - logs… - INFO - 0.027969s
+2021-02-24 10:48:36,750 - logs… - INFO - {
+  "error": 0,
+  "version": "PCSMV1R1B2 Daily 1.1.2.4:Jan 13 2021 17:44:47 \n"
+}
+2021-02-24 10:48:36,777 - logs… - INFO - 200
+2021-02-24 10:48:36,777 - logs… - INFO - 0.026125s
+2021-02-24 10:53:55,696 - logs… - INFO - 响应状态码为：200
+2021-02-24 10:53:55,696 - logs… - INFO - 响应时间为：0.004232s
+2021-02-24 10:53:55,701 - logs… - INFO - {
+  "code": 10001,
+  "message": "参数不能为空！"
+}
+2021-02-24 10:54:50,784 - logs… - INFO - {
+  "error": 0,
+  "token": "adbe03ae9f80684fcf636e7c66a30b14"
+}
+2021-02-24 10:54:50,804 - logs… - INFO - 响应状态码为：200
+2021-02-24 10:54:50,804 - logs… - INFO - 响应时间为：0.017414s
+2021-02-24 10:54:53,836 - logs… - INFO - {
+  "error": 0,
+  "errstr": "SUCCESS",
+  "errstrCh": "成功"
+}
+2021-02-24 10:54:53,863 - logs… - INFO - 响应状态码为：200
+2021-02-24 10:54:53,863 - logs… - INFO - 响应时间为：0.023999s
+2021-02-24 10:54:56,880 - logs… - INFO - {
+  "error": 0,
+  "version": "PCSMV1R1B2 Daily 1.1.2.4:Jan 13 2021 17:44:47 \n"
+}
+2021-02-24 10:54:56,897 - logs… - INFO - 响应状态码为：200
+2021-02-24 10:54:56,897 - logs… - INFO - 响应时间为：0.01584s
+2021-02-24 11:23:41,280 - logs… - INFO - resultPathC:\Users\admin\PycharmProjects\interfaceTest\result\report.html
+2021-02-24 11:23:41,280 - logs… - INFO - caseListFileC:\Users\admin\PycharmProjects\interfaceTest\caselist.txt
+2021-02-24 11:23:41,280 - logs… - INFO - caseList[]
+2021-02-24 11:24:48,210 - logs… - INFO - resultPathC:\Users\admin\PycharmProjects\interfaceTest\result\report.html
+2021-02-24 11:24:48,210 - logs… - INFO - caseListFileC:\Users\admin\PycharmProjects\interfaceTest\caselist.txt
+2021-02-24 11:24:48,210 - logs… - INFO - caseList[]
+2021-02-24 11:24:48,309 - logs… - INFO - {
+  "error": 0,
+  "token": "7b0544ad31ed3182c25fa14d19242915"
+}
+2021-02-24 11:24:48,326 - logs… - INFO - 响应状态码为：200
+2021-02-24 11:24:48,326 - logs… - INFO - 响应时间为：0.015595s
+2021-02-24 11:24:51,344 - logs… - INFO - {
+  "error": 0,
+  "errstr": "SUCCESS",
+  "errstrCh": "成功"
+}
+2021-02-24 11:24:51,360 - logs… - INFO - 响应状态码为：200
+2021-02-24 11:24:51,360 - logs… - INFO - 响应时间为：0.015323s
+2021-02-24 11:24:54,378 - logs… - INFO - {
+  "error": 0,
+  "version": "PCSMV1R1B2 Daily 1.1.2.4:Jan 13 2021 17:44:47 \n"
+}
+2021-02-24 11:24:54,396 - logs… - INFO - 响应状态码为：200
+2021-02-24 11:24:54,396 - logs… - INFO - 响应时间为：0.016093s
