@@ -1,6 +1,7 @@
 import datetime
 import os
 # import common.HTMLTestRunner as HTMLTestRunner
+import sys
 import getpathInfo
 import unittest
 import readConfig
@@ -14,6 +15,8 @@ path = getpathInfo.get_path()
 result_path = os.path.join(path, 'result')
 on_off = readConfig.ReadConfig().get_email('on_off')
 log = common.Log.logger
+log_path = os.path.join(path, 'result')  # 存放log文件的路径
+sys.stdout = open(log_path, mode='w', encoding='utf-8')
 
 
 class AllTest:  # 定义一个类AllTest
