@@ -1,5 +1,6 @@
+import datetime
 import os
-import common.HTMLTestRunner as HTMLTestRunner
+# import common.HTMLTestRunner as HTMLTestRunner
 import getpathInfo
 import unittest
 import readConfig
@@ -7,6 +8,7 @@ from common.configEmail import SendMail
 from apscheduler.schedulers.blocking import BlockingScheduler
 import pythoncom
 import common.Log
+from BeautifulReport import BeautifulReport
 
 '''send_mail = SendMail()'''
 path = getpathInfo.get_path()
@@ -17,13 +19,13 @@ log = common.Log.logger
 
 class AllTest:  # 定义一个类AllTest
     def __init__(self):  # 初始化一些参数和数据
-        global reportPath
-        reportPath = os.path.join(result_path, "report.html")  # result/report.html
+        '''global reportPath
+        reportPath = os.path.join(result_path, "report.html")  # result/report.html'''
         self.caseListFile = os.path.join(path, "caselist.txt")  # 配置执行哪些测试文件的配置文件路径
         self.caseFile = os.path.join(path, "testCase")  # 真正的测试断言文件路径
         self.caseList = []
-        log.info('resultPath' + reportPath)  # 将resultPath的值输入到日志，方便定位查看问题
-        log.info('caseListFile'+self.caseListFile)  # 同理
+        log.info('测试结果路径为:' + result_path)  # 将resultPath的值输入到日志，方便定位查看问题
+        log.info('测试用例列表路径'+self.caseListFile)  # 同理
         log.info('caseList'+str(self.caseList))  # 同理
 
     def set_case_list(self):
@@ -69,24 +71,28 @@ class AllTest:  # 定义一个类AllTest
         """
         try:
             suit = self.set_case_suite()  # 调用set_case_suite获取test_suite
-            print('try')
+            print("*********TEST START*********")
+            log.info("*********TEST START*********")
             print(str(suit))
             if suit is not None:  # 判断test_suite是否为空
                 print('if-suit')
-                fp = open(reportPath, 'wb')  # 打开result/20181108/report.html测试报告文件，如果不存在就创建
+                # fp = open(reportPath, 'wb')  # 打开result/report.html测试报告文件，如果不存在就创建
                 # 调用HTMLTestRunner
-                runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title='Test Report', description='Test Description')
+                now = datetime.datetime.now().strftime('%Y-%m-%d %H_%M_%S')
+                filename = '测试报告'
+                runner = BeautifulReport(suit).report(description='测试报告', filename=filename, report_dir=result_path)
                 runner.run(suit)
             else:
                 print("Have no case to test.")
+                log.info("Have no case to test.")
         except Exception as ex:
             print(str(ex))
             # log.info(str(ex))
 
         finally:
             print("*********TEST END*********")
-            # log.info("*********TEST END*********")
-            fp.close()
+            log.info("*********TEST END*********\n\n")
+            # fp.close()
         # 判断邮件发送的开关
         if on_off == 'on':
             mail = SendMail(

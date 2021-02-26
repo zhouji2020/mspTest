@@ -1,3 +1,4 @@
+import datetime
 import os
 import logging
 from logging.handlers import TimedRotatingFileHandler
@@ -5,6 +6,7 @@ import getpathInfo
 
 path = getpathInfo.get_path()  # 根目录绝对路径
 log_path = os.path.join(path, 'result')  # 存放log文件的路径
+# now = datetime.datetime.now().strftime('%Y-%m-%d %H_%M_%S')
 
 
 class Logger(object):

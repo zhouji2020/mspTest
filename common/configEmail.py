@@ -23,12 +23,9 @@ class SendMail(object):
     def send_mail(self):  # 定义发送邮件的方法
         msg = MIMEMultipart()  # 定义发送内容的对象
         if self.file:  # 判断是否有附件
-            file_name = os.path.split(self.file)[-1]  # 获取附件文件名，不取路径
-            try:  # 异常处理
-                f = open(self.file, 'rb').read()  # 打开日志文件并读取为字符串
-            except Exception as e:  # 异常情况
-                raise Exception('附件打不开！！！！')
-            else:
+            for n in range(len(self.file)):
+                file_name = os.path.split(self.file[n])[-1]  # 获取附件文件名，不取路径
+                f = open(self.file[n], 'rb').read()  # 打开日志文件并读取为字符串
                 att = MIMEText(f, "base64", "utf-8")
                 att["Content-Type"] = 'application/octet-stream'  # base64.b64encode(file_name.encode()).decode()
                 new_file_name = '=?utf-8?b?' + base64.b64encode(file_name.encode()).decode() + '?='
@@ -61,7 +58,8 @@ if __name__ == '__main__':  # 当前邮件发送模块测试
         recv=[ReadConfig().get_email('recv')],
         title=ReadConfig().get_email('title'),
         content=ReadConfig().get_email('content'),
-        file=r'C:\Users\admin\PycharmProjects\interfaceTest\result\logs',
+        file=['C:/Users/admin/PycharmProjects/interfaceTest/result/logs',
+              'C:/Users/admin/PycharmProjects/interfaceTest/result/测试报告.html'],
         ssl=False,
     )
     m.send_mail()

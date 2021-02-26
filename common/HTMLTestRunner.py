@@ -1,4 +1,4 @@
-import datetime
+'''import datetime
 import io
 import sys
 import time
@@ -811,4 +811,4 @@ main = TestProgram
 ##############################################################################
 
 if __name__ == "__main__":
-    main(module=None)
+    main(module=None)'''

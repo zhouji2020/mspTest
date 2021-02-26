@@ -2,8 +2,8 @@ import os
 
 
 def get_path():
-    path = os.path.split(os.path.realpath(__file__))[0]
-    return path
+    path = os.path.split(os.path.realpath(__file__))[0]  # 获取当前文件绝对路径
+    return path  # 返回路径
 
 
 if __name__ == '__main__':  # 执行该文件，测试下是否OK
