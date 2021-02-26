@@ -15,7 +15,7 @@ path = getpathInfo.get_path()
 result_path = os.path.join(path, 'result')
 on_off = readConfig.ReadConfig().get_email('on_off')
 log = common.Log.logger
-log_path = os.path.join(path, 'result')  # 存放log文件的路径
+log_path = os.path.join(result_path, 'logs')  # 存放log文件的路径
 sys.stdout = open(log_path, mode='w', encoding='utf-8')
 
 
