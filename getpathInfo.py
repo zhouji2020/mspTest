@@ -2,7 +2,7 @@ import os
 
 
 def get_path():
-    path = os.path.split(os.path.realpath(__file__))[0]  # 获取当前文件绝对路径
+    path = os.path.split(os.path.abspath(__file__))[0]  # 获取当前文件绝对路径
     return path  # 返回路径
 
 
