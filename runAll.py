@@ -10,7 +10,6 @@ import pythoncom
 import common.Log
 from BeautifulReport import BeautifulReport
 
-'''send_mail = SendMail()'''
 path = getpathInfo.get_path()
 result_path = os.path.join(path, 'result')
 on_off = readConfig.ReadConfig().get_email('on_off')
@@ -26,7 +25,6 @@ class AllTest:  # 定义一个类AllTest
         self.caseList = []
         log.info('测试结果路径为:' + result_path)  # 将resultPath的值输入到日志，方便定位查看问题
         log.info('测试用例列表路径'+self.caseListFile)  # 同理
-        log.info('caseList'+str(self.caseList))  # 同理
 
     def set_case_list(self):
         """
@@ -50,11 +48,11 @@ class AllTest:  # 定义一个类AllTest
         suite_module = []
         for case in self.caseList:  # 从caselist元素组中循环取出case
             case_name = case.split("/")[-1]  # 通过split函数来将aaa/bbb分割字符串，-1取后面，0取前面
-            print(case_name+".py")  # 打印出取出来的名称
+            # print(case_name+".py")  # 打印出取出来的名称
             discover = unittest.defaultTestLoader.discover(self.caseFile, pattern=case_name + '.py', top_level_dir=None)
             # 批量加载用例，第一个参数为用例存放路径，第一个参数为路径文件名
             suite_module.append(discover)  # 将discover存入suite_module元素组
-            print('suite_module:'+str(suite_module))
+            # print('suite_module:'+str(suite_module))
         if len(suite_module) > 0:  # 判断suite_module元素组是否存在元素
             for suite in suite_module:  # 如果存在，循环取出元素组内容，命名为suite
                 for test_name in suite:  # 从discover中取出test_name，使用addTest添加到测试集
@@ -71,14 +69,16 @@ class AllTest:  # 定义一个类AllTest
         """
         try:
             suit = self.set_case_suite()  # 调用set_case_suite获取test_suite
+            print('实际执行测试用例列表为：' + str(self.caseList))
+            log.info('实际执行测试用例列表为：' + str(self.caseList))  # 同理
             print("*********TEST START*********")
             log.info("*********TEST START*********")
-            print(str(suit))
+            # print(str(suit))
             if suit is not None:  # 判断test_suite是否为空
-                print('if-suit')
+                # print('if-suit')
                 # fp = open(reportPath, 'wb')  # 打开result/report.html测试报告文件，如果不存在就创建
                 # 调用HTMLTestRunner
-                now = datetime.datetime.now().strftime('%Y-%m-%d %H_%M_%S')
+                # now = datetime.datetime.now().strftime('%Y-%m-%d %H_%M_%S')
                 filename = '测试报告'
                 runner = BeautifulReport(suit).report(description='测试报告', filename=filename, report_dir=result_path)
                 runner.run(suit)
@@ -101,12 +101,18 @@ class AllTest:  # 定义一个类AllTest
                 recv=[readConfig.ReadConfig().get_email('recv')],
                 title=readConfig.ReadConfig().get_email('title'),
                 content=readConfig.ReadConfig().get_email('content'),
-                file=r'C:\Users\admin\PycharmProjects\interfaceTest\result\logs',
+                file=['C:/Users/admin/PycharmProjects/interfaceTest/result/logs',
+                      'C:/Users/admin/PycharmProjects/interfaceTest/result/测试报告.html'],
                 ssl=False,
             )
             mail.send_mail()
-        else:
+        elif on_off == 'off':
             print("邮件发送开关配置关闭，请打开开关后可正常自动发送测试报告")
+            log.info("邮件发送开关配置关闭，请打开开关后可正常自动发送测试报告\n\n")
+        else:
+            print("邮件发送开关配置错误！！！")
+            log.info("邮件发送开关配置错误！！！\n\n")
+
 # pythoncom.CoInitialize()
 # scheduler = BlockingScheduler()
 # scheduler.add_job(AllTest().run, 'cron', day_of_week='1-5', hour=14, minute=59)

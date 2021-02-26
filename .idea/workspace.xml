@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e92bbab-2a44-44f6-ad11-d8ece45bf83a" name="Default Changelist" comment="完善注释">
+    <list default="true" id="8e92bbab-2a44-44f6-ad11-d8ece45bf83a" name="Default Changelist" comment="完善各模块运行情况">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/HTMLTestRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/HTMLTestRunner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/Log.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/Log.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/configEmail.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/configEmail.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getpathInfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/getpathInfo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geturlParams.py" beforeDir="false" afterPath="$PROJECT_DIR$/geturlParams.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/globalvar.py" beforeDir="false" afterPath="$PROJECT_DIR$/globalvar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/readConfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/logs" beforeDir="false" afterPath="$PROJECT_DIR$/result/logs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runAll.py" beforeDir="false" afterPath="$PROJECT_DIR$/runAll.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCase/testAuthentication.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/testAuthentication.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +154,7 @@
       <recent name="C:\Users\songlihui\PycharmProjects\dkxinterfaceTest" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.configEmail">
+  <component name="RunManager" selected="Python.runAll">
     <configuration name="HTMLTestRunner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="mspTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -276,8 +269,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.configEmail" />
         <item itemvalue="Python.runAll" />
+        <item itemvalue="Python.configEmail" />
         <item itemvalue="Python.Log" />
         <item itemvalue="Python.HTMLTestRunner" />
         <item itemvalue="Python.readConfig" />
@@ -373,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614249195292</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="完善各模块运行情况">
+      <created>1614320799822</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1614320799822</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -511,7 +511,8 @@
     <MESSAGE value="测试用例适配修改" />
     <MESSAGE value="完善测试用例" />
     <MESSAGE value="完善注释" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善注释" />
+    <MESSAGE value="完善各模块运行情况" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善各模块运行情况" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
