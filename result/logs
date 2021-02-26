@@ -672,3 +672,32 @@
 2021-02-26 14:44:36,154 - logs… - INFO - 邮件发送开关配置关闭，请打开开关后可正常自动发送测试报告
 
 
+2021-02-26 14:57:13,231 - logs… - INFO - 测试结果路径为:C:\Users\admin\PycharmProjects\interfaceTest\result
+2021-02-26 14:57:13,231 - logs… - INFO - 测试用例列表路径C:\Users\admin\PycharmProjects\interfaceTest\caselist.txt
+2021-02-26 14:57:13,338 - logs… - INFO - 实际执行测试用例列表为：['user/testAuthentication']
+2021-02-26 14:57:13,338 - logs… - INFO - *********TEST START*********
+2021-02-26 14:57:16,364 - logs… - INFO - {
+  "error": 0,
+  "token": "82ec84d8a21ff32bc95900e09f2cd95f"
+}
+2021-02-26 14:57:16,385 - logs… - INFO - 响应状态码为：200
+2021-02-26 14:57:16,385 - logs… - INFO - 响应时间为：0.017197s
+2021-02-26 14:57:19,407 - logs… - INFO - {
+  "error": 0,
+  "errstr": "SUCCESS",
+  "errstrCh": "成功"
+}
+2021-02-26 14:57:19,426 - logs… - INFO - 响应状态码为：200
+2021-02-26 14:57:19,427 - logs… - INFO - 响应时间为：0.016407s
+2021-02-26 14:57:22,447 - logs… - INFO - {
+  "error": 0,
+  "version": "PCSMV1R1B2 Daily 1.1.2.4:Feb  4 2021 11:40:25 \n"
+}
+2021-02-26 14:57:22,464 - logs… - INFO - 响应状态码为：200
+2021-02-26 14:57:22,464 - logs… - INFO - 响应时间为：0.015463s
+2021-02-26 14:57:22,474 - logs… - INFO - *********TEST END*********
+
+
+2021-02-26 14:57:22,474 - logs… - INFO - 邮件发送开关配置关闭，请打开开关后可正常自动发送测试报告
+
+
