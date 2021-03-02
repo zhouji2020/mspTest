@@ -2,9 +2,10 @@ import datetime
 import os
 import logging
 from logging.handlers import TimedRotatingFileHandler
+import frozen_dir
 import getpathInfo
 
-path = getpathInfo.app_path()  # 根目录绝对路径
+path = frozen_dir.app_path()  # 根目录绝对路径
 log_path = os.path.join(path, 'result')  # 存放log文件的路径
 # now = datetime.datetime.now().strftime('%Y-%m-%d %H_%M_%S')
 

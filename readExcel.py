@@ -1,8 +1,10 @@
 import os
+
+import frozen_dir
 import getpathInfo  # 自己定义的内部类，该类返回项目的绝对路径
 from xlrd import open_workbook  # 调用读Excel的第三方库xlrd
 
-path = getpathInfo.app_path()  # 拿到该项目所在的绝对路径
+path = frozen_dir.app_path()  # 拿到该项目所在的绝对路径
 
 
 class readExcel():

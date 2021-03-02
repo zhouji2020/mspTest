@@ -3,6 +3,7 @@ import os
 # import common.HTMLTestRunner as HTMLTestRunner
 import sys
 import time
+import frozen_dir
 import getpathInfo
 import unittest
 import readConfig
@@ -12,7 +13,7 @@ import pythoncom
 import common.Log
 from BeautifulReport import BeautifulReport
 
-path = getpathInfo.app_path()
+path = frozen_dir.app_path()
 result_path = os.path.join(path, 'result')
 on_off = readConfig.ReadConfig().get_email('on_off')
 log = common.Log.logger

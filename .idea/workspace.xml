@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e92bbab-2a44-44f6-ad11-d8ece45bf83a" name="Default Changelist" comment="取消本地文件使用功能">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8e92bbab-2a44-44f6-ad11-d8ece45bf83a" name="Default Changelist" comment="路径冻结使用" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -152,7 +150,7 @@
       <recent name="C:\Users\songlihui\PycharmProjects\dkxinterfaceTest" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.frozen_dir">
+  <component name="RunManager" selected="Python.runAll">
     <configuration name="configEmail" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="mspTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -267,8 +265,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.frozen_dir" />
         <item itemvalue="Python.runAll" />
+        <item itemvalue="Python.frozen_dir" />
         <item itemvalue="Python.getpathInfotest" />
         <item itemvalue="Python.getpathInfo" />
         <item itemvalue="Python.configEmail" />
@@ -441,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614651604985</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="路径冻结使用">
+      <created>1614652822341</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1614652822341</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -584,7 +589,8 @@
     <MESSAGE value="增加运行时长" />
     <MESSAGE value="修改错误" />
     <MESSAGE value="取消本地文件使用功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="取消本地文件使用功能" />
+    <MESSAGE value="路径冻结使用" />
+    <option name="LAST_COMMIT_MESSAGE" value="路径冻结使用" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
