@@ -69,11 +69,11 @@ class RunMain:
 
 
 if __name__ == '__main__':  # 通过写死参数，来验证我们写的请求是否正确（需要先运行起test_api.py模块）
-    result1 = RunMain().run_main('post', 'http://127.0.0.1:8888/login', {'name': 'xiaoming', 'pwd': '111'}, 'no')
+    '''result1 = RunMain().run_main('post', 'http://127.0.0.1:8888/login', {'name': 'xiaoming', 'pwd': '111'}, 'no')
     result2 = RunMain().run_main('get', 'http://127.0.0.1:8888/login', 'name=xiaoming&pwd=111', 'yes')
     print(result1)
     print(type(result1))
     print(result1.status_code)
     print(str(result1.elapsed.total_seconds())+'s')
     print(result2)
-    print(type(result2))
+    print(type(result2))'''

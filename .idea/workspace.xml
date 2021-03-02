@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e92bbab-2a44-44f6-ad11-d8ece45bf83a" name="Default Changelist" comment="增加运行时长">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runAll.py" beforeDir="false" afterPath="$PROJECT_DIR$/runAll.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCase/testAuthentication.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/testAuthentication.py" afterDir="false" />
-    </list>
+    <list default="true" id="8e92bbab-2a44-44f6-ad11-d8ece45bf83a" name="Default Changelist" comment="修改错误" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -422,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614648069476</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="修改错误">
+      <created>1614649659884</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1614649659884</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -563,7 +566,8 @@
     <MESSAGE value="完善各模块运行情况" />
     <MESSAGE value="添加日志打印" />
     <MESSAGE value="增加运行时长" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加运行时长" />
+    <MESSAGE value="修改错误" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改错误" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
