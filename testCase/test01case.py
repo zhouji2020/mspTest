@@ -1,4 +1,4 @@
-import json
+'''import json
 import unittest
 from common.configHttp import RunMain
 import paramunittest
@@ -61,5 +61,5 @@ class TestUserLogin(unittest.TestCase):
             self.assertEqual(ss['code'], -1)
         if self.case_name == 'login_null':  # 同上
             self.assertEqual(ss['code'], 10001)
-
+'''
 

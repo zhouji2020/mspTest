@@ -11,5 +11,5 @@ class geturlParams():  # 定义一个方法，将从配置文件中读取的进�
 
 
 if __name__ == '__main__':  # 验证拼接后的正确性
-    print(geturlParams().get_url())
+    '''print(geturlParams().get_url())'''
 

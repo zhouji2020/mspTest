@@ -52,7 +52,7 @@ class SendMail(object):
 
 
 if __name__ == '__main__':  # 当前邮件发送模块测试
-    m = SendMail(
+    '''m = SendMail(
         username='zhouji@kedacom.com',
         passwd='7TmP9XC9',
         recv=[ReadConfig().get_email('recv')],
@@ -62,4 +62,4 @@ if __name__ == '__main__':  # 当前邮件发送模块测试
               'C:/Users/admin/PycharmProjects/interfaceTest/result/测试报告.html'],
         ssl=False,
     )
-    m.send_mail()
+    m.send_mail()'''

@@ -62,4 +62,4 @@ class TestAuthentication(unittest.TestCase):  # 定义TestAuthentication单元�
 
 
 if __name__ == "__main__":  # 只运行当前模块
-    unittest.main()  # 运行单元测试模块
+    '''unittest.main()  # 运行单元测试模块'''
