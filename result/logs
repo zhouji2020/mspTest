@@ -1,28 +1,28 @@
 实际执行测试用例列表为：['user/testAuthentication']
 *********TEST START*********
 \interfaceTest\result
-2021-02-26 17:00:55,137 - logs… - INFO - 测试用例列表路径C:\Users\admin\PycharmProjects\interfaceTest\caselist.txt
-2021-02-26 17:00:55,908 - logs… - INFO - 实际执行测试用例列表为：['user/testAuthentication']
-2021-02-26 17:00:55,908 - logs… - INFO - *********TEST START*********
-2021-02-26 17:00:58,942 - logs… - INFO - {
+2021-03-02 09:08:15,907 - logs… - INFO - 测试用例列表路径C:\Users\admin\PycharmProjects\interfaceTest\caselist.txt
+2021-03-02 09:08:15,995 - logs… - INFO - 实际执行测试用例列表为：['user/testAuthentication']
+2021-03-02 09:08:15,995 - logs… - INFO - *********TEST START*********
+2021-03-02 09:08:19,017 - logs… - INFO - {
   "error": 0,
-  "token": "9953ca0597b1c1e38470d9b48b7f936d"
+  "token": "55d56f56632544c8f87585f56af53cff"
 }
-2021-02-26 17:00:58,961 - logs… - INFO - 响应状态码为：200
-2021-02-26 17:00:58,962 - logs… - INFO - 响应时间为：0.017224s
-2021-02-26 17:01:01,979 - logs… - INFO - {
+2021-03-02 09:08:19,036 - logs… - INFO - 响应状态码为：200
+2021-03-02 09:08:19,037 - logs… - INFO - 响应时间为：0.016233s
+2021-03-02 09:08:22,053 - logs… - INFO - {
   "error": 0,
   "errstr": "SUCCESS",
   "errstrCh": "成功"
 }
-2021-02-26 17:01:01,996 - logs… - INFO - 响应状态码为：200
-2021-02-26 17:01:01,996 - logs… - INFO - 响应时间为：0.015311s
-2021-02-26 17:01:05,011 - logs… - INFO - {
+2021-03-02 09:08:22,069 - logs… - INFO - 响应状态码为：200
+2021-03-02 09:08:22,069 - logs… - INFO - 响应时间为：0.015015s
+2021-03-02 09:08:25,087 - logs… - INFO - {
   "error": 0,
   "version": "PCSMV1R1B2 Daily 1.1.2.4:Feb  4 2021 11:40:25 \n"
 }
-2021-02-26 17:01:05,028 - logs… - INFO - 响应状态码为：200
-2021-02-26 17:01:05,028 - logs… - INFO - 响应时间为：0.015303s
-2021-02-26 17:01:05,059 - logs… - INFO - *********TEST END*********
+2021-03-02 09:08:25,103 - logs… - INFO - 响应状态码为：200
+2021-03-02 09:08:25,103 - logs… - INFO - 响应时间为：0.014993s
+2021-03-02 09:08:25,108 - logs… - INFO - *********TEST END*********
 
 
