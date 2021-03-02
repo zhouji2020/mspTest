@@ -13,7 +13,7 @@ import pythoncom
 import common.Log
 from BeautifulReport import BeautifulReport
 
-path = frozen_dir.app_path()
+path = getpathInfo.get_path()
 result_path = os.path.join(path, 'result')
 on_off = readConfig.ReadConfig().get_email('on_off')
 log = common.Log.logger
