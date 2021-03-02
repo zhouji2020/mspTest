@@ -126,6 +126,7 @@ class AllTest:  # 定义一个类AllTest
 
 if __name__ == '__main__':
     AllTest().run()
-    time.sleep(10)
+
+time.sleep(10)
 
 
