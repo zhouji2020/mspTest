@@ -2,7 +2,7 @@ import os
 import configparser
 import getpathInfo  # 引入我们自己的写的获取路径的类
 
-path = getpathInfo.get_path()  # 获取当前文件绝对路径
+path = getpathInfo.app_path()  # 获取当前文件绝对路径
 config_path = os.path.join(path, 'config.ini')  # 获取配置文件的绝对路径
 config = configparser.ConfigParser()  # 调用外部的读取配置文件的方法
 config.read(config_path, encoding='utf-8')  # 以utf-8编码读取配置文件

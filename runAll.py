@@ -12,7 +12,7 @@ import pythoncom
 import common.Log
 from BeautifulReport import BeautifulReport
 
-path = getpathInfo.get_path()
+path = getpathInfo.app_path()
 result_path = os.path.join(path, 'result')
 on_off = readConfig.ReadConfig().get_email('on_off')
 log = common.Log.logger
