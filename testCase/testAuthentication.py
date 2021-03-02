@@ -36,7 +36,7 @@ class TestAuthentication(unittest.TestCase):  # 定义TestAuthentication单元�
     def tearDown(self):  # 定义用例执行后的进行的操作类
         print("测试结束，输出log完结\n\n")  # 打印相关信息
 
-    def test_login(self):
+    def test_authentication(self):
         # new_url = url + '/msp/api/v1/manage/system/login'
         # body = json.dumps({"user_name": "admin", "password": "admin"})
         info_json = json.loads(RunMain().run_main(self.method, url+self.path, self.body, 'yes'))

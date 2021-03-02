@@ -3,7 +3,6 @@ import os
 # import common.HTMLTestRunner as HTMLTestRunner
 import sys
 import time
-
 import getpathInfo
 import unittest
 import readConfig
@@ -126,7 +125,5 @@ class AllTest:  # 定义一个类AllTest
 
 if __name__ == '__main__':
     AllTest().run()
-
-time.sleep(10)
 
 
